@@ -1,0 +1,27 @@
+.wrapper {
+    margin-top: 30px;
+    margin-left: 14%;
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem;
+    grid-gap: 1rem;
+    grid-auto-flow: row;
+    column-gap: 120px;
+    row-gap: 40px;
+}
+
+.tableDataPhoto {
+    width: 180px;
+    height: 144px;
+}
+
+.cell {
+    width: 200px;
+    height: 234px;
+    text-align: center;
+    border: 3px solid gray;
+    padding: 10px;
+}
+
+.cellProperty {
+    margin-top: 5px;
+}

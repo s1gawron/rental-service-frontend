@@ -1,0 +1,101 @@
+.categoryPicker {
+    width: 100%;
+    height: 220px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categoryWrapper {
+    width: 40%;
+    height: 200px;
+    float: left;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 4%;
+    margin-right: auto;
+}
+
+.categoryButtonWrapper {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categoryButton {
+    width: 150px;
+    height: 150px;
+    border: none;
+    background: lightgray;
+    border-radius: 15px;
+}
+
+.categoryButton:hover {
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background: gray;
+}
+
+.faIcon {
+    font-size: 100px;
+}
+
+.newToolsWrapper {
+    text-align: center;
+}
+
+.tableWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.tableHeaders {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tableHeader {
+    width: 14%;
+}
+
+.tableData {
+    font-weight: bold;
+}
+
+.tableDataName {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.tableDataDescription {
+    font-weight: bold;
+    border: 2px solid darkgrey;
+    border-radius: 15px;
+    font-style: italic;
+}
+
+.tableDataPhoto {
+    width: 180px;
+    height: 144px;
+}
+
+.checkToolButton {
+    border: none;
+    background: lightgray;
+    border-radius: 15px;
+    height: 30px;
+    width: 100px;
+}
+
+.checkToolButton:hover {
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    background: gray;
+}

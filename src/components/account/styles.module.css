@@ -1,0 +1,42 @@
+.accountDataWrapper {
+    width: 50%;
+    border: 3px solid darkgrey;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.userDataWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+.userDataLeftColumn {
+    margin-left: 8%;
+    width: 40%;
+    float: left;
+}
+
+.userDataRightColumn {
+    width: 40%;
+    float: left;
+}
+
+.userDataPropertyWrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.userDataValue {
+    font-style: italic;
+}
+
+.userDataLabel {
+    font-weight: bold;
+}

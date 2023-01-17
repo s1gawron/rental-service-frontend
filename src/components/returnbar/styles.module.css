@@ -1,0 +1,25 @@
+.returnBar {
+    margin-top: 10px;
+    margin-left: 5%;
+}
+
+.returnButton {
+    width: 100px;
+    height: 50px;
+    border: none;
+    background: lightgray;
+    border-radius: 15px;
+}
+
+.returnButton:hover {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background: gray;
+}
+
+.faArrowIcon {
+    font-size: 36px;
+}

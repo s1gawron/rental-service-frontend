@@ -1,0 +1,64 @@
+.wrapper {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid darkgrey;
+}
+
+.input {
+    margin-top: 5px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inputWrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.userDataWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.register_button {
+    margin-top: 10px;
+}
+
+.login_link_header {
+    margin: 5px;
+}
+
+.login_link_wrapper {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.error_msg {
+    width: 75%;
+    padding: 15px;
+    font-size: 14px;
+    background-color: #f34646;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leftColumn {
+    float: left;
+}
+
+.rightColumn {
+    margin-left: 20px;
+    float: left;
+}
+
+.login_button {
+}

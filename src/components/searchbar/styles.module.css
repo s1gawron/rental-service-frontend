@@ -1,0 +1,41 @@
+.wrapper {
+    width: 100%;
+}
+
+.formWrapper {
+    width: 80%;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid darkgrey;
+    border-radius: 10px;
+}
+
+.labelWrapper {
+    margin-left: 20px;
+    float: left;
+    width: 50px;
+    margin-top: 14px;
+}
+
+.inputWrapper {
+    margin-left: 20px;
+    float: left;
+    width: 80%;
+    margin-top: 14px;
+}
+
+.input {
+    width: 100%;
+}
+
+.searchButtonWrapper {
+    float: left;
+    margin-left: 20px;
+    margin-top: 14px;
+}
+
+.searchButton {
+    width: 170%;
+}

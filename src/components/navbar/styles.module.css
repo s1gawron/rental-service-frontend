@@ -1,0 +1,100 @@
+.navbar {
+    width: 100%;
+    border: 3px solid darkgrey;
+    height: 80px;
+}
+
+.leftColumn {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.rightColumn {
+    float: left;
+    width: 50%;
+}
+
+.userAccountLinkWrapper {
+    float: left;
+    width: 6%;
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 80%;
+}
+
+.userAccountButton {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: lightgray;
+    border-radius: 15px;
+}
+
+.userAccountButton:hover {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background: gray;
+}
+
+.faUserIcon {
+    font-size: 40px;
+}
+
+.logoutButtonWrapper {
+    float: left;
+    width: 6%;
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logOutButton {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: lightgray;
+    border-radius: 15px;
+}
+
+.logOutButton:hover {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background: gray;
+}
+
+.loginButtonWrapper {
+    float: left;
+    width: 6%;
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 40%;
+    margin-right: auto;
+}
+
+.loginButton {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: lightgray;
+    border-radius: 15px;
+}
+
+.loginButton:hover {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background: gray;
+}
