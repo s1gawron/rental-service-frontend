@@ -94,3 +94,67 @@
     height: 40px;
     width: 120px;
 }
+
+.toolManagementButtonWrapper {
+    margin-top: 20px;
+    margin-left: 18%;
+}
+
+.editToolButtonWrapper {
+    float: left;
+}
+
+.editToolButton {
+    border: none;
+    background: #006a00;
+    color: white;
+    border-radius: 30px;
+    height: 40px;
+    width: 120px;
+}
+
+.editToolButton:hover {
+    border: none;
+    background: forestgreen;
+    cursor: pointer;
+    color: white;
+    border-radius: 30px;
+    height: 40px;
+    width: 120px;
+}
+
+.deleteToolButtonWrapper {
+    float: left;
+    margin-left: 40px;
+}
+
+.deleteToolButton {
+    float: left;
+    border: none;
+    background: red;
+    color: white;
+    border-radius: 30px;
+    height: 40px;
+    width: 120px;
+}
+
+.deleteToolButton:hover {
+    border: none;
+    background: orangered;
+    cursor: pointer;
+    color: white;
+    border-radius: 30px;
+    height: 40px;
+    width: 120px;
+}
+
+.toolDeleteResultErrorMsg {
+    width: 75%;
+    padding: 15px;
+    font-size: 14px;
+    background-color: #f34646;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin: 15px auto;
+}

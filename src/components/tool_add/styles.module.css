@@ -1,0 +1,62 @@
+.addToolModuleWrapper {
+    width: 40%;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid darkgrey;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.addToolFormWrapper {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.addToolInputWrapper {
+    text-align: center;
+    padding: 10px;
+}
+
+.addToolInput {
+    margin-top: 5px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.addToolResultErrorMsg {
+    width: 75%;
+    padding: 15px;
+    font-size: 14px;
+    background-color: #f34646;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.addToolButton {
+    border: none;
+    background: dodgerblue;
+    color: white;
+    border-radius: 30px;
+    height: 35px;
+    width: 130px;
+}
+
+.addToolButton:hover {
+    border: none;
+    background: deepskyblue;
+    cursor: pointer;
+    color: white;
+    border-radius: 30px;
+    height: 35px;
+    width: 130px;
+}

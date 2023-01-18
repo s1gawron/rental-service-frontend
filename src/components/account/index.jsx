@@ -67,30 +67,35 @@ function Account() {
                     <div className={styles.userDataLeftColumn}>
                         <div className={styles.userDataPropertyWrapper}>
                             <div className={styles.userDataLabel}>Kraj:</div>
-                            <div className={styles.userDataValue}>{data.customerAddress.country}</div>
+                            <div
+                                className={styles.userDataValue}>{data.customerAddress === null ? "Nie dotyczy" : data.customerAddress.country}</div>
                         </div>
 
                         <div className={styles.userDataPropertyWrapper}>
                             <div className={styles.userDataLabel}>Miasto:</div>
-                            <div className={styles.userDataValue}>{data.customerAddress.city}</div>
+                            <div
+                                className={styles.userDataValue}>{data.customerAddress === null ? "Nie dotyczy" : data.customerAddress.city}</div>
                         </div>
 
                         <div className={styles.userDataPropertyWrapper}>
                             <div className={styles.userDataLabel}>Ulica:</div>
-                            <div className={styles.userDataValue}>{data.customerAddress.street}</div>
+                            <div
+                                className={styles.userDataValue}>{data.customerAddress === null ? "Nie dotyczy" : data.customerAddress.street}</div>
                         </div>
 
                         <div className={styles.userDataPropertyWrapper}>
                             <div className={styles.userDataLabel}>Kod pocztowy:</div>
-                            <div className={styles.userDataValue}>{data.customerAddress.postCode}</div>
+                            <div
+                                className={styles.userDataValue}>{data.customerAddress === null ? "Nie dotyczy" : data.customerAddress.postCode}</div>
                         </div>
                     </div>
 
                     <div style={{clear: "both"}}/>
 
+                    {data.userRole === "CUSTOMER" &&
                     <Link to="/account/reservations">
                         <button className={styles.userReservationButton}>Moje zamówienia</button>
-                    </Link>
+                    </Link>}
                 </div>
             </div>
         </div>

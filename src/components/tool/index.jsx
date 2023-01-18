@@ -20,7 +20,7 @@ function Tool() {
         }
     })
 
-    const getData = async () => {
+    const getToolData = async () => {
         const currentToolId = window.location.pathname.split('/')[3];
         const url = "http://localhost:8080/api/public/tool/get/id/" + currentToolId;
 
@@ -29,9 +29,50 @@ function Tool() {
         })
     }
 
+    const [userData, setUserData] = useState({
+        "email": "",
+        "firstName": "",
+        "lastName": "",
+        "userRole": "",
+        "customerAddress": {
+            "country": "",
+            "city": "",
+            "street": "",
+            "postCode": ""
+        },
+    });
+
+    const getUserData = async () => {
+        const url = "http://localhost:8080/api/user/details"
+        await axios.get(url, {
+            headers: {
+                "Authorization": localStorage.getItem("token")
+            }
+        }).then((response) => {
+            setUserData(response.data);
+        })
+    }
+
     useEffect(() => {
-        getData();
-    }, [])
+        getToolData();
+        getUserData();
+    }, []);
+
+    const [error, setError] = useState("");
+
+    const handleToolDelete = () => {
+        const currentToolId = window.location.pathname.split('/')[3];
+        const url = "http://localhost:8080/api/tool/delete/" + currentToolId;
+        axios.delete(url, {
+            headers: {
+                "Authorization": localStorage.getItem("token")
+            }
+        }).then(() => {
+            window.location = "/tools/category/" + tool.toolCategory.toLowerCase();
+        }).catch((error) => {
+            setError(error.response.data.message);
+        })
+    }
 
     return (
         <div>
@@ -39,6 +80,8 @@ function Tool() {
             <Returnbar/>
 
             <div className={styles.toolWrapper}>
+
+                {error && <div className={styles.toolDeleteResultErrorMsg}>{error}</div>}
                 <div className={styles.leftToolDataColumn}>
                     <div><img src={tool.imageUrl} alt={tool.name} className={styles.toolDataPhoto}/></div>
                     <h2 className={styles.toolNameProperty}>{tool.name}</h2>
@@ -72,11 +115,32 @@ function Tool() {
 
                         <div style={{clear: "both"}}/>
 
-                        <div className={styles.rentButtonWrapper}>
-                            <Link to={"/tool/rent?toolId=" + tool.toolId}>
-                                <button className={styles.rentButton}>Wypożycz!</button>
-                            </Link>
-                        </div>
+                        {
+                            userData.userRole === "CUSTOMER" &&
+                            <div className={styles.rentButtonWrapper}>
+                                <Link to={"/tool/rent?toolId=" + tool.toolId}>
+                                    <button className={styles.rentButton}>Wypożycz!</button>
+                                </Link>
+                            </div>
+                        }
+
+                        {
+                            userData.userRole === "WORKER" &&
+                            <div className={styles.toolManagementButtonWrapper}>
+                                <div className={styles.editToolButtonWrapper}>
+                                    <Link to={"/tool/edit/" + tool.toolId}>
+                                        <button className={styles.editToolButton}>Edytuj!</button>
+                                    </Link>
+                                </div>
+
+                                <div className={styles.deleteToolButtonWrapper}>
+                                    <button className={styles.deleteToolButton} onClick={handleToolDelete}>Usuń!
+                                    </button>
+                                </div>
+
+                                <div style={{clear: "both"}}/>
+                            </div>
+                        }
                     </div>
                 </div>
 
@@ -85,8 +149,6 @@ function Tool() {
                 <div className={styles.toolDescriptionProperty}>{tool.description}</div>
             </div>
         </div>
-
-
     );
 }
 

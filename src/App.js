@@ -9,6 +9,8 @@ import Tool from "./components/tool";
 import Reservation from "./components/reservation";
 import UserReservation from "./components/user_reservation";
 import SearchResult from "./components/search_result";
+import ToolAdd from "./components/tool_add";
+import ToolEdit from "./components/tool_edit";
 
 function App() {
     return (
@@ -22,6 +24,8 @@ function App() {
             <Route path="/tool/get/:id" exact element={<Tool/>}/>
             <Route path="/tool/rent" exact element={<Reservation/>}/>
             <Route path="/search/result" exact element={<SearchResult/>}/>
+            <Route path="/tool/add" exact element={<ToolAdd/>}/>
+            <Route path="/tool/edit/:toolId" exact element={<ToolEdit/>}/>
         </Routes>
     );
 }
