@@ -3,6 +3,7 @@ import Returnbar from "../returnbar";
 import styles from "./styles.module.css";
 import {useEffect, useState} from "react";
 import axios from "axios";
+import {Link} from "react-router-dom";
 
 function Account() {
     const [data, setData] = useState({
@@ -53,8 +54,8 @@ function Account() {
                         </div>
 
                         <div className={styles.userDataPropertyWrapper}>
-                           <div className={styles.userDataLabel}>Nazwisko:</div>
-                           <div className={styles.userDataValue}>{data.lastName}</div>
+                            <div className={styles.userDataLabel}>Nazwisko:</div>
+                            <div className={styles.userDataValue}>{data.lastName}</div>
                         </div>
 
                         <div className={styles.userDataPropertyWrapper}>
@@ -86,6 +87,10 @@ function Account() {
                     </div>
 
                     <div style={{clear: "both"}}/>
+
+                    <Link to="/account/reservations">
+                        <button className={styles.userReservationButton}>Moje zamówienia</button>
+                    </Link>
                 </div>
             </div>
         </div>

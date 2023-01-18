@@ -1,0 +1,80 @@
+.userNotLoggedForUserReservationErrorMsg {
+    margin-top: 15%;
+    width: 40%;
+    padding: 15px;
+    font-size: 24px;
+    background-color: #f34646;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.userReservationsCountWrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: underline;
+}
+
+.userReservationsDataWrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.reservationTableHeaders {
+    background-color: dodgerblue;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+.reservationTableHeader {
+    width: 14%;
+}
+
+.reservationTableData {
+    background-color: gray;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    height: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.reservationCancelButton {
+    border: none;
+    background: red;
+    color: white;
+    border-radius: 30px;
+    height: 25px;
+    width: 75px;
+}
+
+.reservationCancelButton:hover {
+    border: none;
+    background: orangered;
+    cursor: pointer;
+    color: white;
+    border-radius: 30px;
+    height: 25px;
+    width: 75px;
+}
+
+.reservationCancelErrorMsg {
+    width: 75%;
+    padding: 15px;
+    font-size: 14px;
+    background-color: #f34646;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -68,7 +68,7 @@ function getReservationPageForLoggedUser(dateFrom, setDateFrom, dateTo, setDateT
                 "Authorization": localStorage.getItem("token")
             }
         }).then(() => {
-            window.location = "/";
+            window.location = "/account/reservations";
         }).catch((error) => {
             console.log(error);
             setError(error.response.data.message);

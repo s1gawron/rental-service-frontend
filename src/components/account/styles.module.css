@@ -40,3 +40,24 @@
 .userDataLabel {
     font-weight: bold;
 }
+
+.userReservationButton {
+    margin-top: 10px;
+    border: none;
+    background: dodgerblue;
+    color: white;
+    border-radius: 30px;
+    height: 35px;
+    width: 150px;
+}
+
+.userReservationButton:hover {
+    margin-top: 10px;
+    border: none;
+    background: deepskyblue;
+    cursor: pointer;
+    color: white;
+    border-radius: 30px;
+    height: 35px;
+    width: 150px;
+}
