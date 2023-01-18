@@ -1,0 +1,73 @@
+.searchResultWrapper {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.searchResultTableWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%;
+    border: 3px solid grey;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.searchResultErrorMsg {
+    width: 75%;
+    padding: 15px;
+    font-size: 14px;
+    background-color: #f34646;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.searchResultTableHeaders {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.searchResultTableHeader {
+    width: 14%;
+}
+
+.searchResultTableData {
+    font-weight: bold;
+}
+
+.searchResultTableDataName {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.searchResultTableDataDescription {
+    font-weight: bold;
+    border: 2px solid darkgrey;
+    border-radius: 15px;
+    font-style: italic;
+}
+
+.searchResultTableDataPhoto {
+    width: 180px;
+    height: 144px;
+    border-radius: 15px;
+}
+
+.searchResultCheckToolButton {
+    border: none;
+    background: lightgray;
+    border-radius: 15px;
+    height: 30px;
+    width: 100px;
+}
+
+.searchResultCheckToolButton:hover {
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    background: gray;
+}

@@ -8,6 +8,7 @@ import Account from "./components/account";
 import Tool from "./components/tool";
 import Reservation from "./components/reservation";
 import UserReservation from "./components/user_reservation";
+import SearchResult from "./components/search_result";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/account/reservations" exact element={<UserReservation/>}/>
             <Route path="/tool/get/:id" exact element={<Tool/>}/>
             <Route path="/tool/rent" exact element={<Reservation/>}/>
+            <Route path="/search/result" exact element={<SearchResult/>}/>
         </Routes>
     );
 }
