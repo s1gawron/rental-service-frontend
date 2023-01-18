@@ -12,6 +12,9 @@ function Navbar() {
         case "/tools/category/heavy":
             currentPage = "SPRZĘT CIĘŻKI"
             break;
+        case "/tool/rent":
+            currentPage = "REZERWACJA NARZĘDZI"
+            break;
         default:
             currentPage = "WYPOŻYCZALNIA NARZĘDZI"
             break;
@@ -21,9 +24,9 @@ function Navbar() {
 
     if (userToken) {
         return getNavbarForLoggedUser(currentPage);
-    } else {
-        return getNavbarForNotLoggedUser(currentPage);
     }
+
+    return getNavbarForNotLoggedUser(currentPage);
 }
 
 function getNavbarForLoggedUser(currentPage) {

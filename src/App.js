@@ -6,6 +6,7 @@ import Main from "./components/main";
 import Category from "./components/category";
 import Account from "./components/account";
 import Tool from "./components/tool";
+import Reservation from "./components/reservation";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/tools/category/:category" exact element={<Category/>}/>
             <Route path="/account" exact element={<Account/>}/>
             <Route path="/tool/get/:id" exact element={<Tool/>}/>
+            <Route path="/tool/rent" exact element={<Reservation/>}/>
         </Routes>
     );
 }

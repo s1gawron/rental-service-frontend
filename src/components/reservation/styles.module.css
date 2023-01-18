@@ -1,0 +1,101 @@
+.userNotLoggedForReservationErrorMsg {
+    margin-top: 15%;
+    width: 40%;
+    padding: 15px;
+    font-size: 24px;
+    background-color: #f34646;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reservationFormWrapper {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 3px solid grey;
+    padding: 20px;
+}
+
+.reservationFormLeftColumn {
+    width: 40%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid grey;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.reservationFormRightColumn {
+    width: 40%;
+    float: left;
+    margin-right: auto;
+    border: 3px solid grey;
+    border-radius: 15px;
+    margin-left: 15%;
+    padding: 10px;
+}
+
+.reservationToolPhoto {
+    width: 180px;
+    height: 144px;
+    border-radius: 15px;
+}
+
+.reservationToolProperty {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.reservationErrorMessage {
+    width: 75%;
+    padding: 15px;
+    font-size: 14px;
+    background-color: #f34646;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.inputWrapper {
+    margin-left: 20px;
+    width: 80%;
+    margin-bottom: 14px;
+}
+
+.input {
+    margin-top: 5px;
+    width: 80%;
+    margin-left: 18%;
+    margin-right: auto;
+    text-align: center;
+}
+
+.reservationButton {
+    border: none;
+    background: dodgerblue;
+    color: white;
+    border-radius: 30px;
+    height: 35px;
+    width: 100px;
+}
+
+.reservationButton:hover {
+    border: none;
+    background: deepskyblue;
+    cursor: pointer;
+    color: white;
+    border-radius: 30px;
+    height: 35px;
+    width: 100px;
+}
