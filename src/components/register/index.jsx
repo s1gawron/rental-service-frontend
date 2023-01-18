@@ -54,11 +54,11 @@ function Register() {
             <Returnbar/>
 
             <div className={styles.wrapper}>
-                <div className={styles.register_form}>
-                    {error && <div className={styles.error_msg}>{error}</div>}
+                <div className={styles.registerForm}>
+                    {error && <div className={styles.registerErrorMsg}>{error}</div>}
                     <form onSubmit={handleSubmit}>
                         <h1>Rejestracja</h1>
-                        <div className={styles.left_column}>
+                        <div className={styles.leftColumn}>
                             <div className={styles.inputWrapper}>
                                 <label htmlFor="email">Adres email:</label>
                                 <input
@@ -112,7 +112,7 @@ function Register() {
                             </div>
                         </div>
 
-                        <div className={styles.right_column}>
+                        <div className={styles.rightColumn}>
                             <div className={styles.inputWrapper}>
                                 <label htmlFor="country">Kraj:</label>
                                 <input
@@ -168,14 +168,14 @@ function Register() {
 
                         <div style={{clear: "both"}}/>
 
-                        <button type="submit" className={styles.register_button}>Zarejestruj się!</button>
+                        <button type="submit" className={styles.registerButton}>Zarejestruj się!</button>
                     </form>
                 </div>
 
-                <div className={styles.login_link_wrapper}>
-                    <h4 className={styles.login_link_header}>Posiadasz już konto?</h4>
+                <div className={styles.loginLinkWrapper}>
+                    <h4 className={styles.loginLinkHeader}>Posiadasz już konto?</h4>
                     <Link to="/login">
-                        <button type="button" className={styles.login_button}>Zaloguj się!</button>
+                        <button type="button" className={styles.loginButton}>Zaloguj się!</button>
                     </Link>
                 </div>
             </div>

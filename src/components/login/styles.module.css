@@ -20,26 +20,26 @@
     padding: 10px;
 }
 
-.login_form {
+.loginForm {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
 
-.login_button {
+.loginButton {
     margin-top: 10px;
 }
 
-.register_link_header {
+.registerLinkHeader {
     margin: 5px;
 }
 
-.register_link_wrapper {
+.registerLinkWrapper {
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
-.error_msg {
+.loginErrorMsg {
     width: 75%;
     padding: 15px;
     font-size: 14px;
@@ -61,5 +61,5 @@
     float: left;
 }
 
-.register_button {
+.registerButton {
 }

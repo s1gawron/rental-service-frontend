@@ -34,8 +34,8 @@ function Login() {
             <Returnbar/>
 
             <div className={styles.wrapper}>
-                <div className={styles.login_form}>
-                    {error && <div className={styles.error_msg}>{error}</div>}
+                <div className={styles.loginForm}>
+                    {error && <div className={styles.loginErrorMsg}>{error}</div>}
                     <form onSubmit={handleSubmit}>
                         <h1>Zaloguj się</h1>
                         <label htmlFor="email">Email:</label>
@@ -64,14 +64,14 @@ function Login() {
                             />
                         </div>
 
-                        <button type="submit" className={styles.login_button}>Zaloguj się!</button>
+                        <button type="submit" className={styles.loginButton}>Zaloguj się!</button>
                     </form>
                 </div>
 
-                <div className={styles.register_link_wrapper}>
-                    <h4 className={styles.register_link_header}>Nie masz konta?</h4>
+                <div className={styles.registerLinkWrapper}>
+                    <h4 className={styles.registerLinkHeader}>Nie masz konta?</h4>
                     <Link to="/register">
-                        <button type="button" className={styles.register_button}>Zarejestruj się!</button>
+                        <button type="button" className={styles.registerButton}>Zarejestruj się!</button>
                     </Link>
                 </div>
             </div>

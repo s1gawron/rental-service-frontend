@@ -20,26 +20,26 @@
     padding: 10px;
 }
 
-.register_form {
+.registerForm {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
 
-.register_button {
+.registerButton {
     margin-top: 10px;
 }
 
-.login_link_header {
+.loginLinkHeader {
     margin: 5px;
 }
 
-.login_link_wrapper {
+.loginLinkWrapper {
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
-.error_msg {
+.registerErrorMsg {
     width: 75%;
     padding: 15px;
     font-size: 14px;
@@ -52,14 +52,14 @@
     margin-top: 15px;
 }
 
-.left_column {
+.leftColumn {
     float: left;
 }
 
-.right_column {
+.rightColumn {
     margin-left: 20px;
     float: left;
 }
 
-.login_button {
+.loginButton {
 }
