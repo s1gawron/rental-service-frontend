@@ -1,0 +1,96 @@
+.toolWrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 3px solid gray;
+    padding: 20px;
+}
+
+.leftToolDataColumn {
+    float: left;
+    width: 45%;
+    text-align: center;
+}
+
+.rightToolDataColumn {
+    float: left;
+    width: 48%;
+    text-align: center;
+    border: 3px solid grey;
+    border-radius: 15px;
+    height: 340px;
+}
+
+.toolDataPhoto {
+    width: 360px;
+    height: 288px;
+    border-radius: 15px;
+}
+
+.toolNameProperty {
+    text-decoration: underline;
+}
+
+.toolDescriptionProperty {
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 3px solid grey;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 15px;
+    padding: 20px
+}
+
+.toolPropertiesWrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.toolPropertyLabel {
+    width: 100px;
+    float: left;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+
+.toolPropertyValue {
+    width: 120px;
+    margin-left: 10%;
+    text-align: center;
+    float: left;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rentButtonWrapper {
+    width: 120px;
+    margin-left: 38%;
+    margin-top: 20px;
+}
+
+.rentButton {
+    border: none;
+    background: dodgerblue;
+    color: white;
+    border-radius: 30px;
+    height: 40px;
+    width: 120px;
+}
+
+.rentButton:hover {
+    border: none;
+    background: deepskyblue;
+    cursor: pointer;
+    color: white;
+    border-radius: 30px;
+    height: 40px;
+    width: 120px;
+}

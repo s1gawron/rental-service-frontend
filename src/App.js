@@ -5,6 +5,7 @@ import Login from "./components/login";
 import Main from "./components/main";
 import Category from "./components/category";
 import Account from "./components/account";
+import Tool from "./components/tool";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Route path="/" exact element={<Main/>}/>
             <Route path="/tools/category/:category" exact element={<Category/>}/>
             <Route path="/account" exact element={<Account/>}/>
+            <Route path="/tool/get/:id" exact element={<Tool/>}/>
         </Routes>
     );
 }

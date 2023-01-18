@@ -46,7 +46,7 @@ function Category() {
                             </div>
 
                             <div className={styles.cellProperty}>
-                                <Link to={"/tool/" + tool.toolId}>
+                                <Link to={"/tool/get/" + tool.toolId}>
                                     <button className={styles.checkToolButton}>Sprawdź! <FontAwesomeIcon
                                         icon={faSearch}/></button>
                                 </Link>

@@ -73,7 +73,7 @@ function Main() {
                                     <td className={styles.tableDataName}>{tool.name}</td>
                                     <td className={styles.tableDataDescription}>{tool.description}</td>
                                     <td className={styles.tableData}>
-                                        <Link to={"/tool/" + tool.toolId}>
+                                        <Link to={"/tool/get/" + tool.toolId}>
                                             <button className={styles.checkToolButton}>Sprawdź! <FontAwesomeIcon
                                                 icon={faSearch}/></button>
                                         </Link>
