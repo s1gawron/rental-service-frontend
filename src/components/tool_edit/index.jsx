@@ -48,6 +48,7 @@ function ToolEdit() {
         axios.get(url).then((response) => {
             setToolData(response.data);
             setToolState(response.data.toolState);
+            document.getElementById("available").checked = response.data.available
         }).catch((error) => {
             setError(error.response.data.message);
         })
@@ -183,8 +184,6 @@ function ToolEdit() {
                                 id="available"
                                 type="checkbox"
                                 name="available"
-                                onChange={handleChange}
-                                defaultChecked={toolData.available}
                                 className={styles.editToolInput}
                             />
                         </div>

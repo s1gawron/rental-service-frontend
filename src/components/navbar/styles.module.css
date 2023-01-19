@@ -1,13 +1,14 @@
 .navbar {
     width: 100%;
-    border: 3px solid darkgrey;
     height: 80px;
+    background-color: dodgerblue;
 }
 
 .leftColumn {
     float: left;
     width: 50%;
     text-align: center;
+    color: white;
 }
 
 .rightColumn {
@@ -32,8 +33,9 @@
     width: 50px;
     height: 50px;
     border: none;
-    background: lightgray;
+    background: #0a50cc;
     border-radius: 15px;
+    color: white;
 }
 
 .toolAddButton:hover {
@@ -42,7 +44,8 @@
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    background: gray;
+    background: royalblue;
+    color: white;
 }
 
 .userAccountLinkWrapper {
@@ -57,8 +60,9 @@
     width: 50px;
     height: 50px;
     border: none;
-    background: lightgray;
+    background: #0a50cc;
     border-radius: 15px;
+    color: white;
 }
 
 .userAccountButton:hover {
@@ -67,7 +71,8 @@
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    background: gray;
+    background: royalblue;
+    color: white;
 }
 
 .faUserIcon {
@@ -88,8 +93,9 @@
     width: 50px;
     height: 50px;
     border: none;
-    background: lightgray;
+    background: #0a50cc;
     border-radius: 15px;
+    color: white;
 }
 
 .logOutButton:hover {
@@ -98,7 +104,8 @@
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    background: gray;
+    background: royalblue;
+    color: white;
 }
 
 .loginButtonWrapper {
@@ -115,8 +122,9 @@
     width: 50px;
     height: 50px;
     border: none;
-    background: lightgray;
+    background: #0a50cc;
     border-radius: 15px;
+    color: white;
 }
 
 .loginButton:hover {
@@ -125,5 +133,6 @@
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    background: gray;
+    background: royalblue;
+    color: white;
 }

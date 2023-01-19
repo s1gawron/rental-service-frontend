@@ -17,7 +17,7 @@
 }
 
 .categoryButtonWrapper {
-    width: 10%;
+    width: 6%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -26,8 +26,9 @@
     width: 150px;
     height: 150px;
     border: none;
-    background: lightgray;
+    background: dodgerblue;
     border-radius: 15px;
+    color: white;
 }
 
 .categoryButton:hover {
@@ -36,7 +37,7 @@
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    background: gray;
+    background: deepskyblue;
 }
 
 .faIcon {
@@ -51,6 +52,8 @@
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+    border: 3px solid mediumblue;
+    border-radius: 15px;
 }
 
 .tableHeaders {
@@ -59,23 +62,30 @@
 }
 
 .tableHeader {
-    width: 14%;
+    width: 10%;
 }
 
-.tableData {
+.firstTableData {
     font-weight: bold;
+    padding: 10px;
 }
 
-.tableDataName {
+.secondTableData {
     font-weight: bold;
     text-decoration: underline;
+    padding: 10px;
 }
 
-.tableDataDescription {
+.thirdTableData {
     font-weight: bold;
-    border: 2px solid darkgrey;
     border-radius: 15px;
     font-style: italic;
+    padding: 10px;
+}
+
+.fourthTableData {
+    font-weight: bold;
+    padding: 10px;
 }
 
 .tableDataPhoto {
@@ -86,10 +96,11 @@
 
 .checkToolButton {
     border: none;
-    background: lightgray;
+    background: #03a89e;
     border-radius: 15px;
     height: 30px;
     width: 100px;
+    color: white;
 }
 
 .checkToolButton:hover {
@@ -98,5 +109,9 @@
     height: 30px;
     width: 100px;
     cursor: pointer;
-    background: gray;
+    background: #00a45a;
+    color: white;
+}
+
+.tableRowWrapper {
 }

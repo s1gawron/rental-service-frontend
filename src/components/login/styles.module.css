@@ -1,6 +1,6 @@
 .wrapper {
     text-align: center;
-    width: 40%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
     border: 3px solid darkgrey;
@@ -10,7 +10,9 @@
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    border-radius: 10px;
+    height: 20px;
+    width: 100%;
 }
 
 .inputWrapper {
@@ -28,6 +30,23 @@
 
 .loginButton {
     margin-top: 10px;
+    border: none;
+    background: dodgerblue;
+    color: white;
+    border-radius: 30px;
+    height: 40px;
+    width: 120px;
+}
+
+.loginButton:hover {
+    margin-top: 10px;
+    border: none;
+    background: deepskyblue;
+    cursor: pointer;
+    color: white;
+    border-radius: 30px;
+    height: 40px;
+    width: 120px;
 }
 
 .registerLinkHeader {
@@ -62,4 +81,17 @@
 }
 
 .registerButton {
+    border: none;
+    color: dodgerblue;
+    background: lightgray;
+    font-size: 15px;
+}
+
+.registerButton:hover {
+    border: none;
+    color: deepskyblue;
+    cursor: pointer;
+    background: white;
+    font-size: 15px;
+    border-radius: 15px;
 }

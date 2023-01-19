@@ -53,12 +53,19 @@ function SearchResult() {
                         {tools.map(tool => {
                             return (
                                 <tr key={tool.toolId}>
-                                    <td className={styles.searchResultTableData}><img src={tool.imageUrl}
-                                                                                      alt={tool.name}
-                                                                                      className={styles.searchResultTableDataPhoto}/>
+                                    <td className={styles.searchResultTableData}>
+                                        <div>
+                                            <img src={tool.imageUrl} alt={tool.name}
+                                                 className={styles.searchResultTableDataPhoto}/>
+                                        </div>
+
+                                        <div>
+                                            {tool.name}
+                                        </div>
+
                                     </td>
-                                    <td className={styles.searchResultTableDataName}>{tool.name}</td>
-                                    <td className={styles.searchResultTableDataDescription}>{tool.description}</td>
+                                    <td className={styles.searchResultTableDataName}>{tool.description || "---"}</td>
+                                    <td className={styles.searchResultTableDataDescription}>{tool.toolState.description || "---"}</td>
                                     <td className={styles.searchResultTableData}>
                                         <Link to={"/tool/get/" + tool.toolId}>
                                             <button

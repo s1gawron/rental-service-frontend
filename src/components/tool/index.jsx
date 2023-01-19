@@ -43,14 +43,18 @@ function Tool() {
     });
 
     const getUserData = async () => {
-        const url = "http://localhost:8080/api/user/details"
-        await axios.get(url, {
-            headers: {
-                "Authorization": localStorage.getItem("token")
-            }
-        }).then((response) => {
-            setUserData(response.data);
-        })
+        const userToken = localStorage.getItem("token");
+
+        if (userToken !== null) {
+            const url = "http://localhost:8080/api/user/details"
+            await axios.get(url, {
+                headers: {
+                    "Authorization": userToken
+                }
+            }).then((response) => {
+                setUserData(response.data);
+            })
+        }
     }
 
     useEffect(() => {

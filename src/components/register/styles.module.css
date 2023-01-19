@@ -11,6 +11,8 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
+    height: 20px;
 }
 
 .inputWrapper {
@@ -28,6 +30,23 @@
 
 .registerButton {
     margin-top: 10px;
+    border: none;
+    background: dodgerblue;
+    color: white;
+    border-radius: 30px;
+    height: 40px;
+    width: 120px;
+}
+
+.registerButton:hover {
+    margin-top: 10px;
+    border: none;
+    background: deepskyblue;
+    cursor: pointer;
+    color: white;
+    border-radius: 30px;
+    height: 40px;
+    width: 120px;
 }
 
 .loginLinkHeader {
@@ -62,4 +81,17 @@
 }
 
 .loginButton {
+    border: none;
+    color: dodgerblue;
+    background: lightgray;
+    font-size: 15px;
+}
+
+.loginButton:hover {
+    border: none;
+    color: deepskyblue;
+    cursor: pointer;
+    background: white;
+    font-size: 15px;
+    border-radius: 15px;
 }

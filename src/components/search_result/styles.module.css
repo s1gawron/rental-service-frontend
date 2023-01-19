@@ -7,7 +7,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 88%;
-    border: 3px solid grey;
+    border: 3px solid mediumblue;
     padding: 15px;
     border-radius: 15px;
 }
@@ -34,31 +34,38 @@
     width: 14%;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 .searchResultTableData {
     font-weight: bold;
+    padding: 10px;
 }
 
 .searchResultTableDataName {
     font-weight: bold;
     text-decoration: underline;
+    padding: 10px;
 }
 
 .searchResultTableDataDescription {
     font-weight: bold;
-    border: 2px solid darkgrey;
     border-radius: 15px;
     font-style: italic;
+    padding: 10px;
 }
 
 .searchResultTableDataPhoto {
     width: 180px;
     height: 144px;
     border-radius: 15px;
+    padding: 10px;
 }
 
 .searchResultCheckToolButton {
     border: none;
-    background: lightgray;
+    background: #03a89e;
     border-radius: 15px;
     height: 30px;
     width: 100px;
@@ -70,5 +77,5 @@
     height: 30px;
     width: 100px;
     cursor: pointer;
-    background: gray;
+    background: #00a45a;
 }

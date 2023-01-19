@@ -5,7 +5,7 @@
     grid-template-columns: 10rem 10rem 10rem 10rem;
     grid-gap: 1rem;
     grid-auto-flow: row;
-    column-gap: 120px;
+    column-gap: 10%;
     row-gap: 40px;
 }
 
@@ -18,10 +18,30 @@
     width: 200px;
     height: 234px;
     text-align: center;
-    border: 3px solid gray;
+    border: 3px solid dodgerblue;
+    border-radius: 5px;
     padding: 10px;
 }
 
 .cellProperty {
     margin-top: 5px;
+}
+
+.checkToolButton {
+    width: 50%;
+    background: #03a89e;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.checkToolButton:hover {
+    width: 50%;
+    background: #00a45a;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    height: 30px;
 }

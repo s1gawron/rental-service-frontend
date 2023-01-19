@@ -142,6 +142,7 @@ function getReservationPageForNotLoggedUser() {
     return (
         <div>
             <Navbar/>
+            <Returnbar/>
             <div className={styles.userNotLoggedForReservationErrorMsg}>Zaloguj się aby móc przeprowadzić rezerwację!
             </div>
         </div>

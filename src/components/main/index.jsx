@@ -67,12 +67,16 @@ function Main() {
                         <tbody>
                         {data.map(tool => {
                             return (
-                                <tr key={tool.toolId}>
-                                    <td className={styles.tableData}><img src={tool.imageUrl} alt={tool.name}
-                                                                          className={styles.tableDataPhoto}/></td>
-                                    <td className={styles.tableDataName}>{tool.name}</td>
-                                    <td className={styles.tableDataDescription}>{tool.description}</td>
-                                    <td className={styles.tableData}>
+                                <tr key={tool.toolId} className={styles.tableRowWrapper}>
+                                    <td className={styles.firstTableData}>
+                                        <div>
+                                            <img src={tool.imageUrl} alt={tool.name} className={styles.tableDataPhoto}/>
+                                        </div>
+                                        <div>{tool.name}</div>
+                                    </td>
+                                    <td className={styles.secondTableData}>{tool.description || "---"}</td>
+                                    <td className={styles.thirdTableData}>{tool.toolState.description || "---"}</td>
+                                    <td className={styles.fourthTableData}>
                                         <Link to={"/tool/get/" + tool.toolId}>
                                             <button className={styles.checkToolButton}>Sprawdź! <FontAwesomeIcon
                                                 icon={faSearch}/></button>

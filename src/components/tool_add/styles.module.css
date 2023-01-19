@@ -27,6 +27,8 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    border-radius: 10px;
+    height: 20px;
 }
 
 .addToolResultErrorMsg {
