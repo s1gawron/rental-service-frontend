@@ -69,6 +69,7 @@ table {
     border-radius: 15px;
     height: 30px;
     width: 100px;
+    color: white;
 }
 
 .searchResultCheckToolButton:hover {
@@ -78,4 +79,5 @@ table {
     width: 100px;
     cursor: pointer;
     background: #00a45a;
+    color: white;
 }

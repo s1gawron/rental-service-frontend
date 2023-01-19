@@ -17,7 +17,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    border: 3px solid grey;
+    border: 3px solid mediumblue;
     padding: 20px;
 }
 
@@ -26,7 +26,6 @@
     float: left;
     margin-left: auto;
     margin-right: auto;
-    border: 3px solid grey;
     border-radius: 15px;
     padding: 10px;
 }
@@ -35,7 +34,7 @@
     width: 40%;
     float: left;
     margin-right: auto;
-    border: 3px solid grey;
+    border: 3px solid mediumblue;
     border-radius: 15px;
     margin-left: 15%;
     padding: 10px;
